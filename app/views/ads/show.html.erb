@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<% if @ad.id? %>
+  <p class="image">
+     <%= link_to (image_tag @ad.ing_url, :style => "height:40px", :alt => "Image not available"), @ad %>
+  </p>
+<% end %>
+  
 <p>
   <strong>Ad Name:</strong>
   <%= @ad.name %>

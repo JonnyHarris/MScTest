@@ -8,7 +8,7 @@
       <th>Price</th>
       <th>Seller Id</th>
       <th>Email</th>
-      <th>HAVEALOOK</th>
+      <th>Advert</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,7 +23,7 @@
         <td><%= ad.email %></td>
         <td>
           <div class="image">
-                <%= link_to (image_tag ad.ing_url, :style => "height:40px"), ad %>
+                <%= link_to (image_tag ad.ing_url, :style => "height:40px", :alt => "Image name Not found at: " + ad.ing_url), ad %>
             </div>
         </td>        
         <td><%= link_to 'Show', ad %></td>
